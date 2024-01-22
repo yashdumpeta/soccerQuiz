@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Soccer Quiz - Medium Results</title>
+    <link rel="stylesheet" href="summary.css">
+</head>
+
+<body>
+
+    <div class="performance">
+        <h1>Your scored: </h1>
+        <div id = "scoreCounter"></div>
+
+        <div class="buttons">
+            <!--restart the game-->
+            <button id="restart" onclick='restart()'>Play Again</button>
+            <button id="quizPage" onclick='goQuiz()'>Other Quizzes</button>
+        </div>
+
+
+    </div>
+    <script src = "medium.js"></script>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            summaryStats(localStorage.getItem('finalScore'));
+        });
+
+    </script>
+</body>
+
+</html>

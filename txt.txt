@@ -1,0 +1,292 @@
+* {
+    /* margin: 0;
+    padding: 0; */
+    font-family: 'Roboto', sans-serif;
+}
+
+.question h1 {
+    text-align: center;
+    margin-top: 80px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 44px;
+    font-weight: lighter;
+}
+
+.scoreHeading, .scoreCount{
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: lighter;
+    color: white;
+
+}
+
+.nameInput {
+    margin: 20px 0;
+    padding: 10px;
+    /* Add some padding for a better appearance */
+}
+
+nav{
+    width: 70%;
+    margin: 20px auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nameInput input {
+    width: 25%;
+    background: inherit;
+    border: none;
+    border-bottom: 2px solid white;
+    /* Add a bottom border */
+    color: white;
+    /* Text color */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    outline: none;
+    font-weight: lighter;
+    /* Remove the default input focus outline */
+}
+
+.nameInput input::placeholder {
+    color: white;
+    opacity: 0.;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(-45deg, #46a229, #11eadb, #2356e2, #e61e61);
+    background-size: 400% 400%;
+    animation: gradient 25s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.container {
+    text-align: center;
+}
+
+#playerImage {
+    max-width: 100%;
+    max-height: 400px;
+    margin: 10px 0;
+    border: 3px solid black;
+
+}
+
+.decision #start {
+
+    padding: 0.6em 1 em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+}
+
+.decision #start:hover {
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 10px;
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+
+.decision #start:active {
+
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+}
+
+.decision #check {
+    padding: 0.6em 2 em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+    height: 40px;
+    width: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.decision #check:hover {
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 10px;
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+
+.decision #check:active {
+
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+}
+
+.decision #skip {
+    padding: 0.6em 1 em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+
+}
+.decision #skip:hover {
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 10px;
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+
+.decision #submit:active {
+
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+}
+
+.decision #submit {
+    padding: 0.6em 1 em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+
+}
+.decision #submit:hover {
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 10px;
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+
+.decision #skip:active {
+
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+}
+
+
+
+
+.nameInput {
+    margin: 20px 0;
+}
+
+
+.playerTraverseButtons{
+    padding: 0.6em 1 em;
+    font-weight: 900;
+    font-size: 13px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+    height: 30px;
+    width: 35px;
+    margin-bottom: 20px;
+    margin-left: 2px;
+}
+
+.playerTraverseButtons:hover {
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 10px;
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+.playerTraverseButtons:active {
+
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+    color: black;
+    background-color: white;
+
+}
+
+.playerTraverseButtons.active{
+    color:white;
+    background-color: black;
+}
+
+.playerTraverseButtons.green{
+    color:white;
+    background-color: green;
+}
+.playerTraverseButtons.clear{
+    color:black;
+    background-color: white;
+}
+.playerTraverseButtons.red{
+    color:white;
+    background-color: red;
+}
+
+.playerTraverseButtons:focus{
+    color: white;
+    background-color: black;
+}
+
+
+.nextPrev{
+    padding: 0.6em 1 em;
+    font-weight: 900;
+    font-size: 13px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+    height: 30px;
+    width: 40px;
+    margin-bottom: 20px;
+}
+
+.nextPrev:hover{
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 10px;
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+
+.nextPrev:active{
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+}
+
+

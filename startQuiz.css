@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* body {
+    background-image: url("https://img.freepik.com/premium-photo/empty-studio-room-dark-blue-pink-violet-neon-with-light-shadow-abstract-background_44706-398.jpg");
+    background-size: cover;
+    height: 100vh;
+} */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(-45deg, #46a229, #11eadb, #2356e2, #e61e61);
+    background-size: 400% 400%;
+    animation: gradient 25s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.quizQuestions {
+    text-align: center;
+    margin-top: 200px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 38px;
+}
+
+.quizQuestions h1{
+    font-family: 'Roboto', sans-serif; 
+    font-weight: lighter;
+    font-size: 50px;
+    margin-top: 80px;
+}
+
+.difficulty{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.difficulty p{
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 40;
+    font-size: 12px;
+    padding: 20px;
+    color: whitesmoke;
+}
+
+/*Customizing over diffButtons*/
+
+
+.diffButtons .easy {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0.6em 2 em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+    color: rgb(11, 200, 11)
+}
+
+.diffButtons .medium {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0.6em 2 em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+    color: goldenrod
+}
+
+.diffButtons .hard {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0.6em 2 em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+    color: rgb(221, 9, 9);
+
+}
+
+/*Hovering over diffButtons*/
+
+.diffButtons .easy:hover {
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 10px;
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+
+.diffButtons .medium:hover {
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 10px;
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+
+.diffButtons .hard:hover {
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 10px;
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+
+.diffButtons .easy:active{
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+}
+
+.diffButtons .medium:active{
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+}
+
+.diffButtons .hard:active{
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+}

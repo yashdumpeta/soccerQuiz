@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Soccer Quiz - Medium</title>
+    <link rel="stylesheet" href="questions.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="question">
+            <h1>What is this player's name?</h1>
+        </div>
+
+        <nav class="navBar">
+            <button class="nextPrev" onclick="prevQuestion()"> &lt; </button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(0)">1</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(1)">2</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(2)">3</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(3)">4</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(4)">5</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(5)">6</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(6)">7</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(7)">8</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(8)">9</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(9)">10</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(10)">11</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(11)">12</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(12)">13</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(13)">14</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(14)">15</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(15)">16</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(16)">17</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(17)">18</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(18)">19</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(19)">20</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(20)">21</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(21)">22</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(22)">23</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(23)">24</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(24)">25</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(25)">26</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(26)">27</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(27)">28</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(28)">29</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(29)">30</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(30)">31</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(31)">32</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(32)">33</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(33)">34</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(34)">35</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(35)">36</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(36)">37</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(37)">38</button>
+            <button class="playerTraverseButtons" onclick="changeQuestion(38)">39</button>
+            <button class="nextPrev" onclick="nextQuestion()"> &gt;</button>
+        </nav>
+
+
+        <img id='playerImage'
+            src='https://st3.depositphotos.com/9880800/15061/i/450/depositphotos_150617400-stock-photo-soccer-ball-on-grass.jpg'
+            alt="Image of Player">
+
+        <div class="nameInput">
+            <input type="text" id="playernameIn" name="playernameIn" placeholder="Enter Name"><br>
+        </div>
+
+        <p class="scoreHeading">Score: <span class="scoreCount">0</span></p>
+
+        <div class="decision">
+            <button id="start" onclick='start()'>Start</button>
+            <button id="check" onclick='checkAnswer()'>Check Answer</button>
+            <button id="skip" onclick='skip()'>Skip</button>
+            <button id="submit" onclick = 'submit()'>Submit</button>
+        </div>
+
+    </div>
+
+    <script src="medium.js"></script>
+    <!-- additional things to add: 1. Progress Bar 2. streak on how many correct questions you have-->
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            alert("Click 'Start'");
+        });
+
+    </script>
+</body>
+
+</html>
